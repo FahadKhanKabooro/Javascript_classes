@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS class 11</title>
+    <style>
+        body{
+            background-color: lightskyblue;
+        }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: inline;
+
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+
+<form>
+    <input type="text" name=""  id="email" onchange="email()">
+    <b class="hide red" id="emailtxt">enter email</b>
+    <br>
+    <input type="password" name=""  id="password">
+    <b class="hide red" id="passwordtxt">enter password</b>
+    <br>
+
+    <button  onclick="getdata()">submit</button>
+
+     <input type="submit" onclick="getdata()"></input>
+    <b  class="hide " style="color: green;" id="submittxt">form submit </b>
+    <br>
+    <select name="" id="selectcountry" onchange="setcountry()">
+        <option selected disabled>select country</option>
+        <option value="pak">pak</option>
+        <option value="ind">ind</option>
+        <option value="afg">afg</option>
+        <option value="uae">uae</option>
+        <option value="s.a">s.a</option>
+    </select>
+</form> 
+
+
+
+
+<script src="main.js"></script>  
+</body>
+</html>
