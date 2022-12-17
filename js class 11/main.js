@@ -40,6 +40,7 @@ function getdata(){
             submittxt.value="hide"
         },2000)
     }
+}
 function setemail(){
     if(email.value!=""){
         emailtxt.className="hide"
