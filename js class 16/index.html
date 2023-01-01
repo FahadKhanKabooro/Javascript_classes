@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Firebase</title>
+</head>
+<body>
+    <input type="text" name="" id="email" onfocus="this.style.backgroundColor='red'">
+    <input type="text" name="" id="password" onfocus="this.style.backgroundColor='red'">
+    <br>
+    <input type="button" value="sign up" id="signup">
+    <br>
+    <input type="button" value="sign in" id="signin">
+
+    
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+<script type="module">
+    const firebaseConfig = {
+  apiKey: "AIzaSyBQLtRAsqYClybPs_Ah_D9EUWKXvpr1kR4",
+  authDomain: "authapp-300d2.firebaseapp.com",
+  databaseURL: "https://authapp-300d2-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "authapp-300d2",
+  storageBucket: "authapp-300d2.appspot.com",
+  messagingSenderId: "890172275133",
+  appId: "1:890172275133:web:b18d29c1a58721b155fad4"
+};
+
+firebase.initializeApp(firebaseConfig)
+</script>
+
+<script src="app.js"></script>
+</html>
