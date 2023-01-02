@@ -11,11 +11,15 @@ signup.addEventListener("click",function(){
     .then((user)=>{
         console.log(user.user)
         var obj = {
-            name: "fahad khan",
-            email: email,
-            password: password
+            name: "Haseeb khan",
+            email: email.value,
+            password: password.value,
+            role: "user",
+            country : "Pakistan",
+            uid: user.user.uid,
         }
-        // firebase.database().ref(user/).push(obj)
+        // firebase.database().ref("users/").push(obj)
+        firebase.database().ref("users/").child(user.user.uid).push(obj)
     })
     .catch((e)=>{
         console.log(e.code)

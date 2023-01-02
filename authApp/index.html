@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth-App</title>
+</head>
+<body>
+    <input type="text" placeholder="email" id="email">
+    <input type="text" placeholder="Password here" id="password">
+    <br>
+    <input type="button" id="signup" value="sign up">
+    <br>
+    <input type="button" id="signin" value="sign in">
+    <input type="button" id="signout" value="log out" style="display: none;">
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+<script type="module">
+   const firebaseConfig = {
+  apiKey: "AIzaSyCdn4BonM50CiYYSyKPcw7jsnk10nMVNCw",
+  authDomain: "practice-authapp.firebaseapp.com",
+  databaseURL: "https://practice-authapp-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "practice-authapp",
+  storageBucket: "practice-authapp.appspot.com",
+  messagingSenderId: "327584121234",
+  appId: "1:327584121234:web:99051d7f6c1877d314c14b"
+};
+firebase.initializeApp(firebaseConfig);
+</script>
+<script src="app.js"></script>
+
+</html>
