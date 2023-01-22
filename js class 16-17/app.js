@@ -1,4 +1,4 @@
-console.log(firebase.database())
+console.log(firebase.database)
 var email = document.getElementById("email")
 var password = document.getElementById("password")
 var signup = document.getElementById("signup")
@@ -19,7 +19,7 @@ signup.addEventListener("click",function(){
             uid: user.user.uid,
         }
         // firebase.database().ref("users/").push(obj)
-        firebase.database().ref("users/").child(user.user.uid).push(obj)
+        firebase.database().ref("users/").child(user.user.uid).set(obj)
     })
     .catch((e)=>{
         console.log(e.code)
@@ -35,9 +35,14 @@ signin.addEventListener("click",function(){
         console.log(user.user.uid)
         console.log(user.user.displayName)
         console.log(user.user.password)
+        localStorage.setItem("uid",user.user.uid)
+
+        // window.location.href="new_pae.html"  
+        window.location.replace("new.html") //page change
     })
     .catch((e)=>{
         console.log(e.code)
         console.log(e.message)
     })
 })
+
